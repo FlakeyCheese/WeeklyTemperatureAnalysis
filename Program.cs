@@ -8,7 +8,7 @@ namespace WeeklyTemperatureAnalysis
 {
     internal class Program
     {
-        
+        static string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
         static void Main(string[] args)
         {
             double[,] temperatures =  {{12,14,17,17.5,20},
@@ -37,8 +37,7 @@ namespace WeeklyTemperatureAnalysis
         }
         public static void printDailyAverages(double[,] temperatures)
         {
-            Console.WriteLine("\nThe Average Daily Temperatures were:");
-            string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+            Console.WriteLine("\nThe Average Daily Temperatures were:");            
             double dailyTotal = 0;
             for (int row = 0; row < temperatures.GetLength(0); row++)
             {
@@ -53,8 +52,7 @@ namespace WeeklyTemperatureAnalysis
         }
         public static void printDailyMaximum(double[,] temperatures)
         {
-            Console.WriteLine("\nThe Maximum Daily Temperatures were:");
-            string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+            Console.WriteLine("\nThe Maximum Daily Temperatures were:");            
             double dailyMax = 0;
             for (int row = 0; row < temperatures.GetLength(0); row++)
             {
